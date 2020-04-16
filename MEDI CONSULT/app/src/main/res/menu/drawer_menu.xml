@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group >
+        <item
+            android:id="@+id/nav_check"
+            android:icon="@drawable/syringe_icon"
+            android:title="Disease Checker" />
+
+        <item
+            android:id="@+id/nav_hosp"
+            android:icon="@drawable/hospital_icon"
+            android:title="Nearby Hospitals" />
+
+        <item
+            android:id="@+id/nav_sos"
+            android:icon="@drawable/call_icon"
+            android:title="SOS Call" />
+
+    </group>
+
+    <item android:title="Communicate">
+
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share_icon"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_abtus"
+                android:icon="@drawable/info"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_cntus"
+                android:icon="@drawable/contact_icon"
+                android:title="Contact Us" />
+
+        </menu>
+    </item>
+</menu>

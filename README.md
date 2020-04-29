@@ -18,3 +18,7 @@ This Repository consist of following :
 -   Detailed REPORT of App
 -   PRESENTATION on Project
 -   Readme File 
+
+
+NOTE - Enter your GOOGLE MAPS API KEY in
+Medi-Consult/MEDI CONSULT/app/src/main/res/values/strings.xml

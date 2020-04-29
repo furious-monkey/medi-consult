@@ -8,35 +8,307 @@
     android:fitsSystemWindows="true"
     android:theme="@style/Theme.AppCompat"
     tools:context=".MainActivity"
-    android:background="#FFFFFF">
+    tools:openDrawer="start"
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
 
-        <ImageView
-            android:layout_width="394dp"
-            android:layout_height="463dp"
-            android:src="@drawable/home_logo"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/toolbar" />
-
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#FFFFFF"
-            android:elevation="4dp"
+            android:elevation="10dp"
             android:theme="@style/AppTheme.NoActionBar"
             app:popupTheme="@style/Theme.AppCompat.Light"
             tools:ignore="MissingConstraints">
 
+
         </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="166dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif"
+            android:text="Medi Consult"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.189"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.013" />
+
+        <EditText
+            android:id="@+id/nametext"
+            android:layout_width="224dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Enter Your Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:layout_constraintHorizontal_bias="0.668"
+            app:layout_constraintStart_toStartOf="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.53"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="39dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.146"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.512"
+            app:srcCompat="@drawable/name" />
+
+        <EditText
+            android:id="@+id/agetext"
+            android:layout_width="224dp"
+            android:layout_height="49dp"
+
+            android:layout_marginEnd="12dp"
+            android:ems="10"
+            android:hint="Enter Your Age"
+            android:inputType="phone"
+            android:paddingLeft="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.712"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.628" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="46dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.626"
+            app:srcCompat="@drawable/age" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="106dp"
+            android:layout_height="103dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.917"
+            app:srcCompat="@drawable/enter1" />
+
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="320dp"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.738">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="135dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="29dp"
+                android:buttonTint="#34B7FF"
+                android:checked="false"
+                android:text=" Male"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.172"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/toolbar"
+                app:layout_constraintVertical_bias="0.566" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="145dp"
+                android:layout_height="43dp"
+                android:buttonTint="#34B7FF"
+                android:checked="false"
+                android:paddingLeft="5dp"
+                android:text=" Female"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.849"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.566" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="133dp"
+            android:layout_height="286dp"
+            android:layout_marginStart="150dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.64"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.125"
+            app:srcCompat="@drawable/doc" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="106dp"
+            android:elevation="1dp"
+            android:layout_height="1.5dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="22dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.358"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.257"
+            app:srcCompat="@drawable/s1" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="50dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.236"
+            app:srcCompat="@drawable/apple" />
+
+        <ImageView
+            android:id="@+id/and"
+            android:layout_width="57dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.453"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.154"
+            app:srcCompat="@drawable/android1" />
+
+        <TextView
+            android:id="@+id/apple1"
+            android:layout_width="137dp"
+            android:layout_height="143dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:editable="false"
+            android:contextClickable="false"
+            android:textIsSelectable="false"
+            android:ems="10"
+            android:fontFamily="@font/bad_script"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:saveEnabled="false"
+            android:singleLine="false"
+            android:text="An Apple\nA Day Keeps\nDoctor Away ."
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.262"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.268" />
+
+        <TextView
+            android:id="@+id/android"
+            android:layout_width="68dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:ems="10"
+            android:fontFamily="@font/bad_script"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:text="APP"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.338"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.175" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.22"
+            app:srcCompat="@drawable/q_left" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.362"
+            app:srcCompat="@drawable/q_right" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"

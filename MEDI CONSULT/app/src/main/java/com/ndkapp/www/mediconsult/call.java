@@ -27,6 +27,9 @@ public class call extends AppCompatActivity {
         setContentView(R.layout.activity_call);
 
         mEditTextNumber = findViewById(R.id.editText2);
+
+
+
         ImageView imageCall = findViewById(R.id.imageView3);
         imageCall.setOnClickListener(new View.OnClickListener() {
             @Override

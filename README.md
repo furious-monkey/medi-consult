@@ -10,7 +10,7 @@ An App a Day Keeps a Doctor away... :wink:
 |[Scope](https://github.com/HAC-2020/rudrabarad/blob/master/README.md#scope)|
 |[Modules](https://github.com/HAC-2020/rudrabarad/blob/master/README.md#modules)|
 |[Problems Encountered](https://github.com/HAC-2020/rudrabarad/blob/master/README.md#problems-encountered)|
-
+|[APK File](https://github.com/HAC-2020/rudrabarad/blob/master/README.md#apk-file)|
 
 
 ## Abstract
@@ -50,5 +50,8 @@ With the help of this application one can prevent their Diseases from spreading 
 - Wasn't able to directly show the information from google so I went with putting Screenshots :sweat_smile:
 - Changing Dependencies Of Android Studio caused Immense Difficulty :disappointed_relieved:
 - Updating Gradle File :worried: and Version of Android Studio
+
+## APK File
+- [Download APK File from here](https://github.com/HAC-2020/rudrabarad/blob/master/Medi%20Consult.apk) 📥
 
 

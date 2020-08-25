@@ -1,5 +1,5 @@
 # MEDI CONSULT
-An App a Day Keeps a Doctor away... :wink:
+An App a Day Keeps a Doctor away :wink:
 
 
 | Table of Contents |

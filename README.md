@@ -33,14 +33,14 @@ With the help of this application one can prevent their Diseases from spreading 
 	 - Age
 	 - Gender
  - Diseases Checker
-	 - Entering Symptoms
-	 - Displaying Diseases
+	 - Entering Symptoms 
+	 - Displaying Diseases :stethoscope:
 	 - Link for Detailed Information
- - Nearby Hospitals
+ - Nearby Hospitals :hospital:
  - SOS Call
 	 - Entering Number
  - Contact Us
-	 - Call
+	 - Call :ambulance:
 	 - Mail
 	 - Location
 
